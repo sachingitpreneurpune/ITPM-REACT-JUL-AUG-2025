@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let products = [
+            { id: 1, name: "Laptop", category: "Electronics", price: 55000, stock: 8, rating: 4.5 },
+            { id: 2, name: "Mouse", category: "Electronics", price: 800, stock: 25, rating: 4.0 },
+            { id: 3, name: "Keyboard", category: "Electronics", price: 1500, stock: 15, rating: 4.2 },
+            { id: 4, name: "T-Shirt", category: "Clothing", price: 700, stock: 30, rating: 3.8 },
+            { id: 5, name: "Jeans", category: "Clothing", price: 1200, stock: 12, rating: 4.1 },
+            { id: 6, name: "Shoes", category: "Footwear", price: 2500, stock: 10, rating: 4.6 },
+            { id: 7, name: "Watch", category: "Accessories", price: 3000, stock: 5, rating: 4.4 },
+            { id: 8, name: "Bag", category: "Accessories", price: 1800, stock: 9, rating: 4.0 },
+            { id: 9, name: "Mobile", category: "Electronics", price: 40000, stock: 6, rating: 4.7 },
+            { id: 10, name: "Cap", category: "Accessories", price: 500, stock: 20, rating: 3.9 }
+        ];
+
+
+        //forEach
+        // products.forEach((item)=>{
+        //     // console.log(item.category)
+        //     if(item.category=="Electronics"){
+        //         console.log(item)
+        //     }
+        // })
+
+
+        // Q1. Show only Electronics products.
+
+        // let Elp=products.filter((item)=>{return item.category=="Electronics"})
+        // console.log(Elp)
+
+        // let Gprice=products.filter((item)=>{return item.price>=2000}).map((m)=>{return m.name })
+        // console.log(Gprice)
+
+
+        // MAP
+
+        // Q1. Add GST 18% to every product price.
+
+        // let addGST=products.map((item)=>{return item.price+=item.price*0.18 })
+        // console.log(addGST)
+
+        //total bill
+
+        // let totalbill=addGST.reduce((a,b)=>{return a+b},0)
+        // console.log(totalbill)
+
+        // Q. Total price of only Electronics category.
+        
+        // let totalbill_el_Product=products.filter((n)=>{return n.category=="Electronics" }).reduce((a,b)=>{return a+b.price} , 0)
+        // console.log(totalbill_el_Product)
+
+          
+       
+
+
+        // let arr=[1,2,3,4,5,6]
+
+        //array Destructuring
+        // let[a,b,c,d,...restData]=arr;
+        // console.log(a)
+        // console.log(restData)
+
+
+        // let arr2=[7,8,9]
+        // let arr3=[...arr,76,876,...arr2]
+        // console.log(arr3)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

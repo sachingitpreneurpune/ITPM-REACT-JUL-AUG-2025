@@ -1,0 +1,101 @@
+TASK 1: Filter Active Users and Show Names
+  let users = [
+  {id:1, name:"Sachin", active:true},
+  {id:2, name:"Amit", active:false},
+  {id:3, name:"Rahul", active:true},
+  {id:4, name:"Neha", active:false}
+];
+
+TASK 2: Find Total Price of Cart
+let cart = [
+  {product:"Laptop", price:50000},
+  {product:"Mouse", price:1000},
+  {product:"Keyboard", price:2000}
+];
+
+TASK 3: Add GST 18% on Product Prices
+let products = [
+ {name:"Mobile", price:10000},
+ {name:"Laptop", price:50000}
+];
+
+TASK 4: Check Product Exists or Not
+let arr = ["Mouse","Laptop","Keyboard"];
+
+TASK 5: Reverse Array Without reverse()
+let arr = [10,20,30,40];
+
+TASK 6: Find Missing Number
+let arr = [1,2,3,5,6];
+
+TASK 7: Separate Positive and Negative Numbers
+let nums = [10,-5,20,-8,30,-1];
+
+TASK 8: Convert Names to Uppercase
+let names = ["sachin","amit","rahul"];
+
+TASK 9: Sum of Odd Numbers Only
+let nums = [1,2,3,4,5,6,7];
+
+TASK 10: Insert Element at Specific Position
+let arr = [10,20,30,40];
+
+TASK 11: Remove Null/Undefined Values by using filter
+let arr = [10,null,20,undefined,30,"",40];
+
+
+TASK 12: Find Common Elements Between Two Arrays using filter and includes
+let a = [1,2,3,4];
+let b = [3,4,5,6];
+
+
+Destructuring Task:- 
+
+TASK 1: Get Student Name and Marks using Object Destructuring
+let student = {
+   name:"Sachin",
+   age:24,
+   marks:89
+};
+
+TASK 2: Get First Two Colors from Array
+let colors = ["Red","Blue","Green","Yellow"];
+
+TASK 3: Skip One Value while Destructuring
+let nums = [10,20,30,40];
+
+
+
+
+PRODUCT ARRAY DATA :-
+let products = [
+   {id:1, name:"Laptop", category:"Electronics", price:55000, stock:8, rating:4.5},
+   {id:2, name:"Mouse", category:"Electronics", price:800, stock:25, rating:4.0},
+   {id:3, name:"Keyboard", category:"Electronics", price:1500, stock:15, rating:4.2},
+   {id:4, name:"T-Shirt", category:"Clothing", price:700, stock:30, rating:3.8},
+   {id:5, name:"Jeans", category:"Clothing", price:1200, stock:12, rating:4.1},
+   {id:6, name:"Shoes", category:"Footwear", price:2500, stock:10, rating:4.6},
+   {id:7, name:"Watch", category:"Accessories", price:3000, stock:5, rating:4.4},
+   {id:8, name:"Bag", category:"Accessories", price:1800, stock:9, rating:4.0},
+   {id:9, name:"Mobile", category:"Electronics", price:40000, stock:6, rating:4.7},
+   {id:10, name:"Cap", category:"Accessories", price:500, stock:20, rating:3.9}
+];
+✅ FILTER QUESTIONS
+Q1. Show only Electronics products.
+Q2. Show products whose price is greater than 2000.
+Q3. Show products whose stock is less than 10.
+Q4. Show products having rating above 4.3.
+Q5. Show only Accessories category products.
+
+✅ MAP QUESTIONS
+Q1. Add GST 18% to every product price.
+Q2. Convert all product names into uppercase.
+
+✅ REDUCE QUESTIONS
+Q1. Find total price of all products.
+
+Q. Total price of only Electronics category.
+Q. Increase every price by 10%.
+
+
+

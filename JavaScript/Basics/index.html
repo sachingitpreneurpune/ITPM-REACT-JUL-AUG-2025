@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+          //var let const
+        //    var a;
+        //   console.log(a)
+        //   var a=10;
+        //   var a=20;
+        //   console.log(a)
+
+        // let x=10;
+        //     x=20;
+        //     console.log(x)
+
+        // const x=10;
+        //     x=20;
+        //     console.log(x)
+
+
+        // let a=10;
+        // console.log(typeof(a))
+
+        // if(Number.isInteger(a)){
+        //     console.log("Int")
+        // }
+        // else{
+        //     console.log("Float")
+
+        // }
+
+        // let b=null
+        // let c;
+
+
+
+        // function Demo(name){
+        //    return("hello "+name)
+        // }
+        // let result=Demo("Demo")
+        // console.log(result)
+
+
+        //Arrow function
+
+        // const Demo=()=>{
+        //     console.log("Arrow Function..")
+        // }
+
+        // Demo()  //js
+        // <Demo/>   //react
+
+
+        
+        let a=10;  //global scope
+
+        function Demo(){
+            console.log(a)
+            let p=10  //local scope
+
+            {
+                let x=10   //block scope
+                console.log(p)
+            }
+
+            {
+                console.log(p)
+
+                let y=10
+            }
+        }
+
+        Demo()
+
+      </script>
+</body>
+</html>

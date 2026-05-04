@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="getData()">getData</button>
+    <button onclick="postData()">sendData</button>
+    <button onclick="putData()">update</button>
+    <button onclick="patchData()">updatetitle</button>
+    <button onclick="deleteData()">delete data</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.11.0/axios.min.js"
+        referrerpolicy="no-referrer"></script>
+
+    <script>
+        let API = "http://localhost:3000/posts"
+        function getData() {
+
+            axios.get(API).then((res) => {
+                console.log(res.data)
+            })
+
+        }
+
+        function postData() {
+            axios.post(API, {
+                title: "New Post",
+                body: "Created using json-server",
+                userId: 3
+            }).then(() => {
+                alert("data send successfully...")
+            })
+        }
+        function putData() {
+            axios.put(`${API}/1`, {
+                id:1,
+                title: "updated Post",
+                body: "hello updated World",
+                userId: 3
+            }).then(() => {
+                alert("data Updated successfully...")
+            })
+        }
+
+        function patchData() {
+            axios.patch(`${API}/1`, {
+               
+                title: "updated new title Post",
+                
+            }).then(() => {
+                alert("title Updated successfully...")
+            })
+        }
+        function deleteData() {
+            axios.delete(`${API}/2`).then(() => {
+                alert("second data deleted successfully")
+            })
+        }
+    </script>
+</body>
+
+</html>

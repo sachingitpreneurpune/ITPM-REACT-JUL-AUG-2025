@@ -1,0 +1,80 @@
+1. Install json-server
+npm install -g json-server
+
+2. Create db.json (Fake Database)
+{
+  "posts": [
+    { "id": 1, "title": "First Post", "body": "Hello World", "userId": 1 },
+    { "id": 2, "title": "Second Post", "body": "Learning Axios", "userId": 2 }
+  ]
+}
+
+
+3. Start Server
+json-server --watch db.json --port 3000
+
+👉 Your API will run at:
+
+http://localhost:3000/posts
+
+4) Add cdn
+
+5)store json api in API
+const API = "http://localhost:3000/posts";
+
+METHODS::-
+✅ 1. GET (Fetch Data)
+axios.get(API)
+.then(res => {
+    console.log("GET:", res.data);
+});
+
+👉 Get single:
+
+axios.get(`${API}/1`)
+.then(res => console.log(res.data));
+
+
+✅ 2. POST (Create Data)
+axios.post(API, {
+    title: "New Post",
+    body: "Created using json-server",
+    userId: 3
+})
+.then(res => {
+    console.log("POST:", res.data);
+});
+
+👉 json-server automatically adds id
+
+
+✅ 3. PUT (Full Update)
+axios.put(`${API}/1`, {
+    id: 1,
+    title: "Updated Full Post",
+    body: "Everything replaced",
+    userId: 1
+})
+.then(res => {
+    console.log("PUT:", res.data);
+});
+
+⚠️ Must send full object
+
+
+✅ 4. PATCH (Partial Update)
+axios.patch(`${API}/1`, {
+    title: "Only Title Updated"
+})
+.then(res => {
+    console.log("PATCH:", res.data);
+});
+
+👉 Only updates given fields
+
+
+✅ 5. DELETE (Remove Data)
+axios.delete(`${API}/1`)
+.then(res => {
+    console.log("DELETE:", res.data);
+});

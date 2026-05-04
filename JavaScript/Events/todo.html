@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+      <input type="text" placeholder="Enter Task" id="input">
+      <button id="btn">AddTask</button>
+
+      <ul id="taskData">
+
+      </ul>
+
+      <script>
+
+         let input=document.getElementById("input")
+         let btn=document.getElementById("btn")
+         let taskData=document.getElementById("taskData")
+
+         btn.addEventListener("click",()=>{
+            let task=input.value;
+            let li=document.createElement("li");
+            li.innerHTML=`${task} <button class="delete">delete</button> <button class="edit">edit</button>`;
+            console.log(li)
+            taskData.appendChild(li)
+            input.value=""
+
+            
+            li.addEventListener("click",(event)=>{
+                console.log(event.target)
+                if(event.target.classList.contains("delete")){
+                    li.remove()
+                }
+            })
+            li.addEventListener("click",(event)=>{
+                console.log(event.target)
+                if(event.target.classList.contains("edit")){
+                    let newValue=prompt("Enter NewValue")
+                    li.innerText=newValue 
+                    // taskData.append(li)
+                }
+            })
+                
+        })
+
+            
+
+
+
+
+
+
+
+       
+
+
+            
+
+
+      </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+✅ JavaScript Topics Required Before React JS
+
+
+
+Basic JS Foundation
+Intermediate JS (Very Important for React)
+Advanced JS Concepts (React uses heavily)
+Modern ES6+ Features (Mandatory)
+
+1. BASIC JAVASCRIPT FOUNDATION (Must Know First)
+
+These are the building blocks.
+
+✔ Variables
+var
+let
+const
+
+✔ Data Types
+String
+Number
+Boolean
+Null
+Undefined
+
+Object
+Array
+
+✔ Operators
+Arithmetic
+Comparison
+Logical
+Assignment
+Ternary
+
+✔ Conditional Statements
+if
+if else
+switch
+
+✔ Loops
+for
+while
+do while
+for...in
+for...of
+
+✔ Functions
+Normal function
+Function expression
+Parameters & arguments
+Return statement
+✔ Scope
+Global scope
+Local scope
+Block scope
+
+
+2. INTERMEDIATE JAVASCRIPT (Very Important)
+
+React code is mostly based on objects, arrays, and functions.
+
+✔ Arrays
+create array
+access array
+update/delete
+Important array methods:
+map()
+filter()
+find()
+reduce()
+forEach()
+some()
+every()
+
+map() is the heart of React list rendering.
+
+✔ Objects
+create object
+nested object
+object methods
+accessing values
+updating values
+Important Object topics
+Object.keys()
+Object.values()
+Object.entries()
+
+✔ String Methods
+includes()
+slice()
+split()
+trim()
+replace()
+
+
+✔ DOM Basics (little bit)
+
+React handles DOM internally, but you should know:
+
+getElementById
+querySelector
+innerHTML
+textContent
+
+event handling basics
+3. ADVANCED JAVASCRIPT CONCEPTS (React Backbone)
+
+These concepts make React easy.
+
+✔ Callback Functions
+
+Function inside function.
+
+function greet(name, callback){
+   console.log("Hello " + name);
+   callback();
+}
+✔ Higher Order Functions
+
+Function that takes another function.
+
+Example:
+
+map
+filter
+reduce
+✔ Closures
+
+Important for hooks understanding.
+
+✔ Lexical Scope
+✔ Execution Context (basic idea)
+✔ Hoisting
+✔ this keyword (basic)
+✔ Event Loop (basic async understanding)
+
+
+4. MODERN JAVASCRIPT ES6+ FEATURES (100% Mandatory for React)
+
+This section is the actual React language.
+
+✔ Arrow Functions
+const add = (a,b) => a+b;
+
+✔ Template Literals
+`Hello ${name}`
+
+✔ Destructuring
+Object destructuring
+const {name, age} = user;
+Array destructuring
+const [a,b] = arr;
+
+✔ Spread Operator
+const newArr = [...arr];
+const newObj = {...obj};
+
+React state update uses this daily.
+
+✔ Rest Operator
+✔ Default Parameters
+✔ Enhanced Object Literals
+✔ Ternary Operator
+
+React JSX uses this heavily.
+
+✔ Modules
+export
+import
+default export
+named export
+✔ Classes (optional but useful)
+
+For understanding old React class components.
+
+✔ Promises
+✔ async / await
+
+API calling in React depends on this.
+
+✔ Fetch API / Axios basic
+5. JAVASCRIPT EVENT HANDLING (Important)
+
+Because React events are based on JS events.
+
+click event
+input event
+submit event
+keyboard event
+mouse event
+event object
+preventDefault()
+
+
+6. JSON HANDLING
+JSON.parse()
+JSON.stringify()
+
+API data comes in JSON.
+
+7. ERROR HANDLING
+try
+catch
+finally
+
+8. OOP BASICS (Helpful)
+class
+constructor
+inheritance
+method overriding
+9. ASYNCHRONOUS JAVASCRIPT
+
+Must know before React API integration.
+
+synchronous vs asynchronous
+callback
+promise
+async await
+fetch data
+🔥 MOST IMPORTANT TOPICS FOR REACT (Top Priority)
+
+If less time then focus on these first:
+
+⭐ Functions
+⭐ Arrays + map/filter
+⭐ Objects
+⭐ Arrow function
+⭐ Destructuring
+⭐ Spread operator
+⭐ Ternary
+⭐ Callback
+⭐ Promise
+⭐ Async Await
+⭐ Events
+⭐ Modules Import Export
+
+✅ PERFECT LEARNING ORDER FOR STUDENTS
+
+Follow this exact order:
+
+Variables/Data types
+Operators/Condition/Loops
+Functions
+Arrays
+Objects
+DOM + Events basics
+Callback + HOF
+ES6 Features
+Promise + Async Await
+JSON + Fetch API
+Then Start React
