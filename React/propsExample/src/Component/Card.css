@@ -1,0 +1,10 @@
+#parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    border: 1px solid red;
+    width: 300px;
+    text-align: center;
+}
