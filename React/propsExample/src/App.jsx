@@ -1,9 +1,6 @@
-import './App.css'
+import './App.css';
 import Card from './Component/Card';
-import Navbar from './Component/Navbar';
-import Parent from './Component/Parent';
-import Student from './Component/Student'
-import User from './Component/User'
+import MyButton from './Component/MyButton';
 
 function App() {
 
@@ -18,6 +15,12 @@ function App() {
       name:"Atul",
       desc:"uytrertyuiuytr",
       age:46
+
+    },
+    {
+      name:"Sagar",
+      desc:"654323456",
+      age:36
 
     }
   ]
@@ -63,6 +66,11 @@ function App() {
         detail.map((s,index)=><Card key={index} data={s}/>)
        }
       </section>
+
+      <MyButton>
+        Lorem ipsum dolor sit amet.
+      </MyButton>
+
     </>
   )
 }
