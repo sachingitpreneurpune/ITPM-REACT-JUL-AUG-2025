@@ -8,6 +8,8 @@ const Multipleinput = () => {
         email:""
     })
 
+    const[cardData,setcardData]=useState(user)
+
     function handleChange(e){
         // console.log(e.target.value)
         // console.log(e.target.name)
@@ -18,6 +20,7 @@ const Multipleinput = () => {
     function handleClick(){
         
         console.log(user)
+        
     }
   return (
     <div>
@@ -26,10 +29,11 @@ const Multipleinput = () => {
         <br /><br />
         <label htmlFor="email">Enter Email:-</label>
         <input type="text" placeholder='Enter Email' id='email' name='email' onChange={handleChange} value={user.email} />
+          <br />
+          <br />
+        <button onClick={handleClick}>Show Card</button>
 
-        <button onClick={handleClick}>showDetail</button>
-
-         <Card data={user}/>
+        <Card data={user}/>
     </div>
   )
 }

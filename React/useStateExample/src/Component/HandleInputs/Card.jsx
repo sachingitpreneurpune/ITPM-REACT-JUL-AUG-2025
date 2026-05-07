@@ -4,8 +4,8 @@ const Card = (props) => {
     console.log(props.data.username)
   return (
     <div>
-        <h1>Username: {props.data.username}</h1>
-        <h1>Email: {props.data.email}</h1>
+        <h1> {props.data.username}</h1>
+        <h1>{props.data.email}</h1>
     </div>
 
     // get id card detail by using form and onchange Event
