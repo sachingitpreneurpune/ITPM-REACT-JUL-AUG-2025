@@ -4,13 +4,13 @@ const ThirdDemo = ({names}) => {
     const[counter,setCounter]=useState(0)
     const[name,setName]=useState("Guest")
 
-//  useEffect(()=>{
-//        console.log("call this statement on the updation of counter")
-//  },[counter])
-
  useEffect(()=>{
-       console.log("call this statement on the updation of counter and name")
- },[counter,name])
+       console.log("call this statement on the updation of counter")
+ },[counter])
+
+//  useEffect(()=>{
+//        console.log("call this statement on the updation of counter and name")
+//  },[counter,name])
 
 
   return (
