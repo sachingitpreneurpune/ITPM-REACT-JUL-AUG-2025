@@ -7,7 +7,7 @@ const MultipleInput = () => {
        password:""
     })
 
-    const[formData,setformData]=useState({})
+    const[formData,setformData]=useState([])
 
 
 
@@ -24,7 +24,7 @@ const MultipleInput = () => {
        function handleSubmit(e){
         e.preventDefault()
 
-         setformData(form)
+         setformData([...formData,form])
 
 
          setForm({
@@ -51,9 +51,21 @@ const MultipleInput = () => {
         
         </form> 
 
-        <h1>{formData.username}</h1>       
+        {/* <h1>{formData.username}</h1>       
         <h1>{formData.email}</h1>       
-        <h1>{formData.password}</h1>       
+        <h1>{formData.password}</h1>        */}
+
+        {
+            formData.map((st,index)=>(
+                
+                <div key={index}>
+                    <h1>Username: {st.username}</h1>
+                <h1>Email: {st.email}</h1>
+                <h1>Password: {st.password}</h1>
+                </div>
+              
+            ))
+        }
     </>
   )
 }

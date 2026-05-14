@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-      {/* <Controlled/> */}
+      <Controlled/>
       {/* <Uncontrolled/> */}
-      <MultipleInput/>
+      {/* <MultipleInput/> */}
     </>
   )
 }
